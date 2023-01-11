@@ -1,0 +1,10 @@
+years = int(input("Enter the number of years: "))
+
+for x in range(0, years):
+    total = 0
+    for y in range(0, 12):
+        rainfall = float(input("Enter the inches of rainfall for month " + str(y+1) + ": "))
+        total += rainfall
+    print("Number of months: " + str(12*years))
+    print("Total inches of rainfall: " + str(total))
+    print("Average rainfall per month: " + str(total/12))

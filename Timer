@@ -1,0 +1,9 @@
+def sum(a, b):
+    return (a + b)
+
+a = int(input('Enter Starting time: '))
+b = int(input('Enter Time to be passed: '))
+
+time = sum(a, b) % 24
+
+print(f'Time of alarm will be: {time}')

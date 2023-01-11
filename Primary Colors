@@ -1,0 +1,11 @@
+a = input('Enter Color 1: ')
+b = input('Enter Color 2: ')
+
+if (a=="Red" and b=="Blue") or (a=="Blue" and b=="Red"):
+    print(f'The mix of {a} and {b} is "Purple"')
+    
+elif (a=="Red" and b=="Yellow") or (a=="Yellow" and b=="Red"):
+    print(f'The mix of {a} and {b} is "Orange"')
+    
+elif (a=="Yellow" and b=="Blue") or (a=="Blue" and b=="Yellow"):
+    print(f'The mix of {a} and {b} is "Green"')

@@ -1,0 +1,10 @@
+def sum(a, b):
+    return (a + b)
+
+def dif(a, b):
+    return (a - b)
+
+a = int(input('1st number: '))
+b = int(input('2nd number: '))
+
+print(f'Sum is {sum(a, b)} and difference is {dif(a, b)}')

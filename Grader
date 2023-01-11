@@ -1,0 +1,30 @@
+student_answers = []
+incorrect_questions = []
+
+num_correct = 0
+num_incorrect = 0
+
+correct_answers = ['A', 'C', 'A', 'A', 'D', 'B', 'C', 'A', 'C', 'B', 'A', 'D', 'C', 'A', 'D', 'C', 'B', 'B', 'D', 'A']
+
+for question in range(1, 21):
+    answer = input('Enter an answer to question ' + str(question) + ': ')
+    student_answers.append(answer)
+
+    if answer == correct_answers[question - 1]:
+        num_correct += 1
+    else:
+        num_incorrect += 1
+
+for question in range(1, 21):
+    if student_answers[question - 1] != correct_answers[question - 1]:
+        incorrect_questions.append(question)
+        
+if num_correct >= 15:
+    print('You have passed the exam!')
+else:
+    print('You have failed the exam. Waa, waa, waah!')
+
+print('Correct answers: ' + str(num_correct))
+print('Incorrect answers: ' + str(num_incorrect))
+
+print('Incorrect questions: ' + str(incorrect_questions))
